@@ -1,8 +1,22 @@
-db-defaults (5.3.1-1deepin) unstable; urgency=medium
+db-defaults (5.3.3) unstable; urgency=medium
 
-  * update changelog version.
+  * Drop package libdb++-dev.
+  * Orphan the package.
 
- -- LiChengGang <lichenggang@uniontech.com>  Tue, 21 Mar 2023 22:23:12 +0800
+ -- Bastian Germann <bage@debian.org>  Sat, 04 Nov 2023 13:02:18 +0100
+
+db-defaults (5.3.2) unstable; urgency=medium
+
+  * Adopt package (Closes: #1014387).
+  * Upgrade debhelper to level 12.
+  * Switch to Priority: optional.
+  * Drop Vcs fields (not existing).
+  * Drop ancient Conflicts.
+  * Drop db-upgrade-util, libdb-sql-dev, libdb-java, and libdb-java-dev.
+  * db-util: Mark Multi-Arch: foreign, drop unused db_sql (Closes: #686875).
+  * d/copyright: Fix to conform to the machine-readable format.
+
+ -- Bastian Germann <bage@debian.org>  Mon, 07 Nov 2022 17:37:36 +0100
 
 db-defaults (5.3.1+nmu1) unstable; urgency=medium
 
